@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin panel</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+</head>
+<body>
+  <div>
+    <header class='header'>
+      <ul class='header__list'>
+        <li class='header__item'>
+          <a class='header__link'>
+            <i class='header__icon icon-wallet'></i>
+            <span>$1,500.00</span>
+            <i class="icon-arrow-down"></i>
+          </a>
+        </li>
+        <li class='header__item'>
+          <a class='header__link'>
+            <i class='header__icon icon-notification'>
+              <span></span>
+            </i>
+          </a>
+        </li>
+        <li class='header__item'>
+          <a class='header__link'>
+            <i class='header__icon icon-profile'>
+              <span>John Doe</span>
+            </i>
+          </a>
+        </li>
+        <li class='header__item'>
+          <a class='header__link'>
+            <i class='header__icon icon-quit'></i>
+          </a>
+        </li>
+      </ul>
+    </header>
+    <nav class='menu'>
+      <div class='menu__element'>
+        <h2 class='menu__main-title'></h2>
+        <a class='menu__hamburger'>
+          <i></i>
+        </a>
+      </div>
+      <ul class='menu__element'>
+        <li class='menu__item'>
+          <a class='menu__link'>
+            <i class='menu__icon icon-general'>
+              <span></span>
+            </i>
+          </a>
+        </li>
+        <li class='menu__item'>
+          <a class='menu__link'>
+            <i class='menu__icon icon-details'>
+              <span></span>
+            </i>
+          </a>
+        </li>
+        <li class='menu__item'>
+          <a class='menu__link'>
+            <i class='menu__icon icon-links'>
+              <span></span>
+            </i>
+          </a>
+        </li>
+        <li class='menu__item'>
+          <a class='menu__link'>
+            <i class='menu__icon icon-banners'>
+              <span></span>
+            </i>
+          </a>
+        </li>
+        <li class='menu__item'>
+          <a class='menu__link'>
+            <i class='menu__icon icon-personaldata'>
+              <span></span>
+            </i>
+          </a>
+        </li>
+        <li class='menu__item'>
+          <a class='menu__link'>
+            <i class='menu__icon icon-payout'>
+              <span></span>
+            </i>
+          </a>
+        </li>
+        <li class='menu__item'>
+          <a class='menu__link'>
+            <i class='menu__icon icon-postback'>
+              <span></span>
+            </i>
+          </a>
+        </li>
+      </ul>
+      <div class='menu__element'>
+        <h4 class='menu__manager-title'></h4>
+        <img class='menu__img'>
+        <p class='menu__dot'></p>
+        <p class='menu__name'></p>
+      </div>
+    </nav>
+    <div class='section-container'>
+      <section class='section'>
+        <h4 class='section__title'></h4>
+        <form class='section__date-form'>
+          <input class='section__date-input' type='date'>
+          <input class='section__date-input' type='date'>
+          <button class='section__btn-short'>
+            <i class='icon-refresh'></i>
+          </button>
+        </form>
+        <div class='section__results'>
+          <div>
+            <p>Visit Signups<span>124</span></p>
+            <p>FTD<span>445</span></p>
+          </div>
+          <div>
+            <p>Net deposit<span>564</span></p>
+            <p>Turn over<span>432</span></p>
+          </div>
+        </div>
+        <div>
+          <h5>Earnings chart</h5>
+          <canvas></canvas>
+        </div>
+      </section>
+      <section clas='section'>
+        <h4 class='section__title'></h4>
+        <button class='section__button-long'></button>
+        <table class='table'>
+          <tbody>
+            <tr>
+              <td>Home page</td>
+              <td>
+                <a class='table__link'>http://www.homepage.com</a>
+              </td>
+              <td>
+                <a>
+                  <i class='table__icon icon-links'></i>
+                </a>
+              </td>
+              <td>
+                <a>
+                  <i class='table__icon icon-trash'></i>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>Currently offer</td>
+              <td>
+                <a class='table__link'>http://www.currently.com</a>
+              </td>
+              <td>
+                <a>
+                  <i class='table__icon icon-links'></i>
+                </a>
+              </td>
+              <td>
+                <a>
+                  <i class='table__icon icon-trash'></i>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>Blurpix</td>
+              <td>
+                <a class='table__link'>http://www.blurpix.com</a>
+              </td>
+              <td>
+                <a>
+                  <i class='table__icon icon-links'></i>
+                </a>
+              </td>
+              <td>
+                <a>
+                  <i class='table__icon icon-trash'></i>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>Your site</td>
+              <td>
+                <a class='table__link'>http://www.yoursite.com</a>
+              </td>
+              <td>
+                <a>
+                  <i class='table__icon icon-links'></i>
+                </a>
+              </td>
+              <td>
+                <a>
+                  <i class='table__icon icon-trash'></i>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <tr>
+                  <td>Google</td>
+                  <td>
+                    <a class='table__link'>http://www.google.com</a>
+                  </td>
+                  <td>
+                    <a>
+                      <i class='table__icon icon-links'></i>
+                    </a>
+                  </td>
+                  <td>
+                    <a>
+                      <i class='table__icon icon-trash'></i>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Facebook</td>
+                  <td>
+                    <a class='table__link'>http://www.facebook.com</a>
+                  </td>
+                  <td>
+                    <a>
+                      <i class='table__icon icon-links'></i>
+                    </a>
+                  </td>
+                  <td>
+                    <a>
+                      <i class='table__icon icon-trash'></i>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Dashboard</td>
+                  <td>
+                    <a class='table__link'>http://www.dashboard.com</a>
+                  </td>
+                  <td>
+                    <a>
+                      <i class='table__icon icon-links'></i>
+                    </a>
+                  </td>
+                  <td>
+                    <a>
+                      <i class='table__icon icon-trash'></i>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Blurax</td>
+                  <td>
+                    <a class='table__link'>http://www.blurax.com</a>
+                  </td>
+                  <td>
+                    <a>
+                      <i class='table__icon icon-links'></i>
+                    </a>
+                  </td>
+                  <td>
+                    <a>
+                      <i class='table__icon icon-trash'></i>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Piece of Wine</td>
+                  <td>
+                    <a class='table__link'>http://www.pieceofwine.com</a>
+                  </td>
+                  <td>
+                    <a>
+                      <i class='table__icon icon-links'></i>
+                    </a>
+                  </td>
+                  <td>
+                    <a>
+                      <i class='table__icon icon-trash'></i>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Twitter</td>
+                  <td>
+                    <a class='table__link'>http://www.twitter.com</a>
+                  </td>
+                  <td>
+                    <a>
+                      <i class='table__icon icon-links'></i>
+                    </a>
+                  </td>
+                  <td>
+                    <a>
+                      <i class='table__icon icon-trash'></i>
+                    </a>
+                  </td>
+                </tr>
+            </tr>
+          </tbody>
+        </table>
+        <button class='section__button-long'></button>
+      </section>
+    </div>
+  </div>
+</body>
+</html>
