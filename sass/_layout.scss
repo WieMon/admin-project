@@ -2,15 +2,40 @@
   box-sizing: border-box;
 }
 
-.container {
-  width: 100%;
-  max-width: 1170px;
-  margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
+body {
+  width: 100vw;
+  margin: 0;
+  background-color: $color-three;
 }
 
-.row { //change name with BEM
+.container {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+
+}
+
+// .row-container {//container for row for grid
+//   width: 100%;
+//   height: 100%;//?
+//   max-width: 1300px;
+//   margin: 0 auto;
+//   padding-left: 15px;
+//   padding-right: 15px;
+// }
+
+.section-container {
+  margin-top: 80px;
+  margin-left: 220px;
+  width: calc(100% - 240px);
+}
+
+.section {
+  background-color: white;
+  margin-bottom: 20px;
+}
+
+.row {
   display: flex;
   flex-wrap: wrap;
 }

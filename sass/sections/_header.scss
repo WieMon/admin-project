@@ -1,0 +1,24 @@
+.header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: $color-two;
+}
+
+.header__list {
+  display: flex;
+
+
+}
+
+.header__item {
+  list-style-type: none;
+
+}
+
+
