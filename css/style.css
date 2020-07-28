@@ -342,12 +342,13 @@ template {
 
 *, *::before, *::after {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  width: 100vw;
-  margin: 0;
   background-color: #e9e4da;
+  font-family: "Open Sans", Helvetica, Arial;
 }
 
 .container {
@@ -660,8 +661,51 @@ body {
   display: flex;
 }
 
+.header__list [class*='icon-'] {
+  display: inline-block;
+  vertical-align: middle;
+}
+
 .header__item {
   list-style-type: none;
+  cursor: pointer;
+  border-left: 1px solid #84817a;
+  padding: 20px;
+  color: #84817a;
+}
+
+.header__item:hover {
+  background-color: #e9e4da;
+}
+
+.header__link {
+  position: relative;
+}
+
+.header__dot {
+  position: absolute;
+  top: 0px;
+  left: 10px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #F58220;
+}
+
+.header__money {
+  font-weight: 700;
+}
+
+.header__name {
+  color: #004276;
+}
+
+.icon-wallet, .icon-profile {
+  padding: 0 5px 0 0;
+}
+
+.icon-arrow-down {
+  padding: 0 0 0 5px;
 }
 
 .menu {

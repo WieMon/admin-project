@@ -12,13 +12,54 @@
 
 .header__list {
   display: flex;
-
-
+  [class*='icon-'] {
+    display: inline-block;
+    vertical-align: middle;
+  }
 }
 
 .header__item {
   list-style-type: none;
+  cursor: pointer;
+  border-left: 1px solid $color-five;
+  padding: 20px;
+  color: $color-five;
+  &:hover {
+    background-color: $color-three;
+  }
+}
 
+.header__link {
+  position: relative;
+}
+
+.header__dot {
+  position: absolute;
+  top: 0px;
+  left:10px;
+  width:5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: $color-four;
+}
+
+.header__money {
+  font-weight: 700;
+}
+
+.header__name {
+  color: $color-one;
+}
+
+.icon-wallet, .icon-profile {
+  padding: 0 5px 0 0;
+}
+.icon-arrow-down {
+  padding: 0 0 0 5px;
+}
+
+.icon-notification, .icon-quit {
+  //padding: 0 10px;
 }
 
 
