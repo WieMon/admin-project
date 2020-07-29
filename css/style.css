@@ -647,6 +647,24 @@ body {
 }
 
 /* Components */
+.section__button {
+  text-decoration: none;
+  background: #F58220;
+  color: #f7f1e3;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+}
+
+.section__button:hover {
+  cursor: pointer;
+  background: #f79d51;
+}
+
+.section__button:focus {
+  outline: none;
+}
+
 /* Sections */
 .header {
   display: -ms-flexbox;

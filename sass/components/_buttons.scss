@@ -1,0 +1,16 @@
+.section__button {
+  text-decoration: none;
+  background: $color-four;
+  color: $color-two;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  &:hover {
+    cursor: pointer;
+    background: lighten($color-four, 10%);
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
