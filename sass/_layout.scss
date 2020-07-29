@@ -28,6 +28,13 @@ body {
   margin-top: 80px;
   margin-left: 220px;
   width: calc(100% - 240px);
+  transition: all .40s;
+}
+
+.expanded {
+  width: calc(100% - 100px);
+  margin: 80px 0 0 80px;
+  transition: all .40s;
 }
 
 .section {

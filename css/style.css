@@ -361,6 +361,13 @@ body {
   margin-top: 80px;
   margin-left: 220px;
   width: calc(100% - 240px);
+  transition: all .40s;
+}
+
+.expanded {
+  width: calc(100% - 100px);
+  margin: 80px 0 0 80px;
+  transition: all .40s;
 }
 
 .section {
@@ -800,6 +807,24 @@ body {
 
 .menu__manager-name {
   display: inline-block;
+}
+
+/*Menu short*/
+.collapsed {
+  width: 60px;
+}
+
+.collapsed .menu__hamburger-title, .collapsed .menu__item-name, .collapsed .menu__manager-title, .collapsed .menu__manager-name {
+  display: none;
+}
+
+.collapsed .menu__manager-div {
+  padding-left: 9px;
+}
+
+.collapsed .menu__manager-dot {
+  top: 20px;
+  left: 42px;
 }
 
 /* Pages / Views */

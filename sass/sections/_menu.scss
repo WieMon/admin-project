@@ -6,8 +6,6 @@
   top: 0;
   left: 0;
   color: $color-two;
-  //padding: 18px;
-
 }
 
 /*menu__hamburger-div*/
@@ -39,6 +37,7 @@
 /*menu__list*/
 .menu__list {
   margin-bottom: 20px;
+
 }
 
 .menu__item {
@@ -96,4 +95,19 @@
 
 .menu__manager-name {
   display: inline-block;
+}
+
+/*Menu short*/
+.collapsed {
+  width: 60px;
+  .menu__hamburger-title, .menu__item-name, .menu__manager-title, .menu__manager-name {
+    display: none;
+  }
+  .menu__manager-div {
+    padding-left: 9px;
+}
+  .menu__manager-dot {
+    top: 20px;
+    left: 42px;
+  }
 }
