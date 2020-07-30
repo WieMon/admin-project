@@ -1,0 +1,35 @@
+.table {
+  width: 60%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  line-height: 60px;
+}
+
+tr {
+  text-align: left;
+  &:first-child {
+    border-top: 1px solid $color-five;
+  }
+  &:hover {
+    background: $color-three;
+    transition: 0.5s;
+    .table__icon {
+      opacity: 1;
+      &:hover {
+        color: $color-four;
+      }
+    }
+  }
+}
+
+td {
+  border-bottom: 1px solid $color-five;
+}
+
+.table__icon {
+  height: 15px;
+  width: 15px;
+  opacity: 0;
+}
+
+

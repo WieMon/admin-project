@@ -1,10 +1,15 @@
-.section__button {
+.button {
+  text-align: center;
+}
+
+.button--large, .button--small {
   text-decoration: none;
   background: $color-four;
   color: $color-two;
-  padding: 10px 20px;
+  margin: 20px;
   border: none;
   border-radius: 5px;
+  display: inline-block;
   &:hover {
     cursor: pointer;
     background: lighten($color-four, 10%);
@@ -12,5 +17,15 @@
   &:focus {
     outline: none;
   }
+}
+
+.button--small {
+  font-size: 20px;
+  width: 45px;
+  padding: 10px;
+}
+
+.button--large {
+  padding: 10px 20px;
 }
 
