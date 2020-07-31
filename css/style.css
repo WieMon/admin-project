@@ -658,7 +658,6 @@ body {
   margin: 20px;
   border: none;
   border-radius: 5px;
-  display: inline-block;
 }
 
 .button--large:hover, .button--small:hover {
@@ -910,6 +909,58 @@ td {
 .collapsed .menu__manager-dot {
   top: 20px;
   left: 42px;
+}
+
+.section__date-input::-webkit-inner-spin-button,
+.section__date-input::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
+}
+
+.section__date {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  padding: 16px;
+  border-bottom: 1px solid #84817a;
+}
+
+.section__date-form {
+  position: relative;
+  width: 320px;
+  border: 1px solid #f7f1e3;
+}
+
+.section__date-form:hover {
+  border-color: #84817a;
+}
+
+.section__date-form:hover .section__date-icon {
+  color: #84817a;
+}
+
+.section__date-input {
+  padding: 5px 0 5px 10px;
+  line-height: 30px;
+  border: hidden;
+  outline: none;
+  cursor: pointer;
+  background: none;
+}
+
+.section__date-input:nth-of-type(2) {
+  border-left: 1px solid #84817a;
+}
+
+.section__date-icon {
+  position: absolute;
+  top: 12px;
+  right: 8px;
+  font-size: 20px;
+  color: #f7f1e3;
 }
 
 /* Pages / Views */

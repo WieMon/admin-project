@@ -1,0 +1,45 @@
+.section__date-input::-webkit-inner-spin-button,
+.section__date-input::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
+}
+
+.section__date {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  border-bottom: 1px solid $color-five;
+}
+
+.section__date-form {
+  position: relative;
+  width: 320px;
+  border: 1px solid $color-two;
+  &:hover {
+    border-color: $color-five;
+    .section__date-icon {
+      color: $color-five;
+    }
+  }
+}
+
+.section__date-input {
+  padding: 5px 0 5px 10px;
+  line-height: 30px;
+  border: hidden;
+  outline: none;
+  cursor: pointer;
+  background: none;
+  &:nth-of-type(2){
+    border-left: 1px solid $color-five;
+  }
+}
+
+.section__date-icon {
+  position: absolute;
+  top: 12px;
+  right: 8px;
+  font-size: 20px;
+  color: $color-two;
+}
