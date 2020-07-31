@@ -1,10 +1,10 @@
-.section__date-input::-webkit-inner-spin-button,
-.section__date-input::-webkit-calendar-picker-indicator {
+.date__input::-webkit-inner-spin-button,
+.date__input::-webkit-calendar-picker-indicator {
   display: none;
   -webkit-appearance: none;
 }
 
-.section__date {
+.date {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -12,7 +12,7 @@
   border-bottom: 1px solid $color-five;
 }
 
-.section__date-form {
+.date__form {
   position: relative;
   width: 320px;
   border: 1px solid $color-two;
@@ -24,7 +24,7 @@
   }
 }
 
-.section__date-input {
+.date__input {
   padding: 5px 0 5px 10px;
   line-height: 30px;
   border: hidden;
@@ -36,7 +36,7 @@
   }
 }
 
-.section__date-icon {
+.date__icon {
   position: absolute;
   top: 12px;
   right: 8px;
