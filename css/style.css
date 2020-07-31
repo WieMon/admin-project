@@ -968,11 +968,15 @@ td {
   text-align: left;
   width: 60%;
   line-height: 30px;
-  background-color: yellow;
+}
+
+.results__text {
+  border-bottom: 1px solid #84817a;
 }
 
 span {
   float: right;
+  font-weight: 700;
 }
 
 /* Pages / Views */
