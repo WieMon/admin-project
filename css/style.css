@@ -647,11 +647,11 @@ body {
 }
 
 /* Components */
-.button {
+.button-container {
   text-align: center;
 }
 
-.button--large, .button--small {
+.button {
   text-decoration: none;
   background: #F58220;
   color: #f7f1e3;
@@ -660,12 +660,12 @@ body {
   border-radius: 5px;
 }
 
-.button--large:hover, .button--small:hover {
+.button:hover {
   cursor: pointer;
   background: #f79d51;
 }
 
-.button--large:focus, .button--small:focus {
+.button:focus {
   outline: none;
 }
 

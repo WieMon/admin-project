@@ -115,7 +115,7 @@
               <i class="icon-calendar date__icon"></i>
             </a>
           </form>
-          <button class='button--small'>
+          <button class='button button--small'>
             <i class='icon-refresh'></i>
           </button>
         </div>
@@ -129,15 +129,15 @@
             <p class='results__text'>Turn over<span>432</span></p>
           </div>
         </div>
-        <div>
+        <div class='graph'>
           <h5>Earnings chart</h5>
-          <canvas></canvas>
+          <canvas id='myChart'></canvas>
         </div>
       </section>
       <section class='section'>
         <h4 class='title'>Links</h4>
-        <div class='button'>
-          <button class='button--large'>+ add new</button>
+        <div class='button-container'>
+          <button class='button button--large'>+ add new</button>
         </div>
         <table class='table'>
           <tbody>
@@ -303,12 +303,13 @@
             </tr>
           </tbody>
         </table>
-        <div class='button'>
-          <button class='button--large'>+ add new</button>
+        <div class='button-container'>
+          <button class='button button--large'>+ add new</button>
         </div>
       </section>
     </div>
   </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
   <script src="js/script.js"></script>
 </body>
 </html>
