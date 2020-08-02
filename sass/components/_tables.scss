@@ -8,11 +8,12 @@
 tr {
   text-align: left;
   &:first-child {
-    border-top: 1px solid $color-five;
+    border-top: 1px solid $color-seven;
   }
   &:hover {
-    background: $color-three;
+    background: $color-two;
     transition: 0.5s;
+    cursor: pointer;
     .table__icon {
       opacity: 1;
       &:hover {
@@ -23,13 +24,17 @@ tr {
 }
 
 td {
-  border-bottom: 1px solid $color-five;
+  border-bottom: 1px solid $color-seven;
+  &:first-of-type {
+    padding-left: 12px;
+  }
 }
 
 .table__icon {
   height: 15px;
   width: 15px;
   opacity: 0;
+  padding: 0 0 0 15px;
 }
 
 

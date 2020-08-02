@@ -9,7 +9,7 @@
   align-items: center;
   justify-content: center;
   padding: 16px;
-  border-bottom: 1px solid $color-five;
+  border-bottom: 1px solid $color-seven;
 }
 
 .date__form {
@@ -18,8 +18,13 @@
   border: 1px solid $color-two;
   &:hover {
     border-color: $color-five;
-    .section__date-icon {
+    .date__icon {
       color: $color-five;
+    }
+    .date__input {
+      &:nth-of-type(2){
+        border-left: 1px solid $color-five;
+      }
     }
   }
 }
@@ -32,7 +37,7 @@
   cursor: pointer;
   background: none;
   &:nth-of-type(2){
-    border-left: 1px solid $color-five;
+    border-left: 1px solid $color-seven;
   }
 }
 

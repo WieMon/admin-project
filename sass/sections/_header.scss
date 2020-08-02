@@ -7,7 +7,8 @@
   position: fixed;
   top: 0;
   right: 0;
-  background-color: $color-two;
+  background-color: $color-three;
+  border-bottom: 1px solid lighten($color-five, 30%);
 }
 
 .header__list {
@@ -21,11 +22,12 @@
 .header__item {
   list-style-type: none;
   cursor: pointer;
-  border-left: 1px solid $color-five;
+  border-left: 1px solid $color-seven;
   padding: 20px;
   color: $color-five;
   &:hover {
-    background-color: $color-three;
+    background-color: $color-two;
+    border-bottom: 1px solid lighten($color-five, 35%);
   }
 }
 
@@ -35,7 +37,7 @@
 
 .header__dot {
   position: absolute;
-  top: 0px;
+  top: 2px;
   left:10px;
   width:5px;
   height: 5px;
@@ -48,14 +50,15 @@
 }
 
 .header__name {
-  color: $color-one;
+  color: $color-five;
 }
 
-.icon-wallet, .icon-profile {
+.icon-wallet {
   padding: 0 5px 0 0;
 }
-.icon-arrow-down {
-  padding: 0 0 0 5px;
+
+.icon-profile, .icon-arrow-down {
+  padding: 0 10px 0 0;
 }
 
 

@@ -5,7 +5,8 @@
   position: fixed;
   top: 0;
   left: 0;
-  color: $color-two;
+  color: $color-six;
+  transition: all .5s;
 }
 
 /*menu__hamburger-div*/
@@ -14,19 +15,12 @@
   justify-content: space-between;
   margin-bottom: 20px;
   padding: 18px;
+  height: 67px;
 }
 
 .menu__hamburger-title {
   font-family: $font-two;
   font-size: 30px;
-}
-
-.menu__hamburger {
-  &:hover{
-    transform: scale(1.2);
-    transition: 0.4s;
-
-  }
 }
 
 .hamburger-icon {
@@ -37,7 +31,7 @@
 /*menu__list*/
 .menu__list {
   margin-bottom: 20px;
-
+height: 274px;
 }
 
 .menu__item {
@@ -51,16 +45,13 @@
   }
 }
 
-.menu-link {//unused class - delete?
-
-}
-
 .menu__icon {
   font-style: normal;
 }
 
 .menu__item-name {
-  padding-left: 20px;
+  padding-left: 25px;
+  position: absolute;
 }
 
 /*menu__manager-div*/
@@ -68,11 +59,13 @@
   padding: 18px;
   border-top: 1px solid $color-two;
   position: relative;
+  height: 120px;
 }
 
 .menu__manager-title {
   text-transform: uppercase;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
+  position: absolute;
 }
 
 .menu__manager-img {
@@ -81,12 +74,14 @@
   border-radius: 45px;
   margin-right: 15px;
   vertical-align: middle;
+  position: absolute;
+  top: 50px;
  }
 
 .menu__manager-dot {
   position: absolute;
   top: 53px;
-  left: 50px;
+  left: 52px;
   width:10px;
   height: 10px;
   border-radius: 50%;
@@ -95,19 +90,24 @@
 
 .menu__manager-name {
   display: inline-block;
+  position: absolute;
+  top: 60px;
+  right: 37px;
 }
 
 /*Menu short*/
 .collapsed {
   width: 60px;
+  transition: all .5s;
   .menu__hamburger-title, .menu__item-name, .menu__manager-title, .menu__manager-name {
     display: none;
   }
   .menu__manager-div {
     padding-left: 9px;
 }
+
   .menu__manager-dot {
-    top: 20px;
+    top: 53px;
     left: 42px;
   }
 }

@@ -35,20 +35,20 @@ var Chart = new Chart(ctx, {
     labels: ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10'],
     datasets: [{
       label: 'Signups',
-      backgroundColor: '#8DBEC8',
-      borderColor: '#8DBEC8',
+      backgroundColor: '#1AB298',
+      borderColor: '#1AB298',
       data: [280, 150, 200, 280, 350, 330, 320, 180, 250, 270]
     },
     {
       label: 'FTD',
-      backgroundColor: '#F29E4E',
-      borderColor: '#F29E4E',
+      backgroundColor: '#a64970',
+      borderColor: '#a64970',
       data: [300, 140, 240, 220, 370, 100, 150, 200, 400, 280],
     },
     {
       label: 'Earned',
-      backgroundColor: '#71B374',
-      borderColor: '#71B374',
+      backgroundColor: '#F7A658',
+      borderColor: '#F7A658',
       data: [59, 49, 68, 90, 67, 41, 13, 38, 48, 48],
       hidden: true,
     }]
