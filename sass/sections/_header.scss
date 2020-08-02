@@ -47,18 +47,34 @@
 
 .header__money {
   font-weight: 700;
+  @media(max-width: 767px) {
+    display: none;
+  }
 }
 
 .header__name {
   color: $color-five;
+  @media(max-width: 767px) {
+    display: none;
+  }
 }
 
 .icon-wallet {
   padding: 0 5px 0 0;
+  @media(max-width: 767px) {
+    padding-right: 15px;
+  }
 }
 
 .icon-profile, .icon-arrow-down {
   padding: 0 10px 0 0;
+  @media(max-width: 767px) {
+    padding-right: 0;
+  }
 }
 
-
+.icon-quit {
+  @media(max-width: 767px) {
+    padding-right: 10px;
+  }
+}

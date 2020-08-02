@@ -3,6 +3,10 @@
   text-align: left;
   width: 60%;
   line-height: 35px;
+  @media(max-width: 767px) {
+    width: 80%;
+    padding-bottom: 10px;
+  }
 }
 
 .results__text {
@@ -12,4 +16,5 @@
 span {
   float: right;
   font-weight: 700;
+
 }

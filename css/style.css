@@ -677,6 +677,12 @@ body {
   padding: 10px;
 }
 
+@media (max-width: 767px) {
+  .button--small {
+    margin-top: 40px;
+  }
+}
+
 .button--large {
   padding: 10px 20px;
 }
@@ -710,12 +716,29 @@ tr:hover .table__icon:hover {
   color: #d81159;
 }
 
+@media (max-width: 767px) {
+  tr {
+    text-align: center;
+    border-bottom: 1px solid #e6e0d4;
+  }
+}
+
 td {
   border-bottom: 1px solid #e6e0d4;
 }
 
 td:first-of-type {
   padding-left: 12px;
+}
+
+@media (max-width: 767px) {
+  td {
+    display: block;
+    border-bottom: none;
+  }
+  td:nth-of-type(3), td:nth-of-type(4) {
+    display: inline-block;
+  }
 }
 
 .table__icon {
@@ -736,6 +759,12 @@ td:first-of-type {
   text-transform: uppercase;
   padding: 20px;
   border-bottom: 1px solid #e6e0d4;
+}
+
+@media (max-width: 767px) {
+  .title {
+    text-align: center;
+  }
 }
 
 /* Sections */
@@ -796,16 +825,46 @@ td:first-of-type {
   font-weight: 700;
 }
 
+@media (max-width: 767px) {
+  .header__money {
+    display: none;
+  }
+}
+
 .header__name {
   color: #84817a;
+}
+
+@media (max-width: 767px) {
+  .header__name {
+    display: none;
+  }
 }
 
 .icon-wallet {
   padding: 0 5px 0 0;
 }
 
+@media (max-width: 767px) {
+  .icon-wallet {
+    padding-right: 15px;
+  }
+}
+
 .icon-profile, .icon-arrow-down {
   padding: 0 10px 0 0;
+}
+
+@media (max-width: 767px) {
+  .icon-profile, .icon-arrow-down {
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .icon-quit {
+    padding-right: 10px;
+  }
 }
 
 .menu {
@@ -944,6 +1003,13 @@ td:first-of-type {
   border-bottom: 1px solid #e6e0d4;
 }
 
+@media (max-width: 767px) {
+  .date {
+    display: block;
+    text-align: center;
+  }
+}
+
 .date__form {
   position: relative;
   width: 320px;
@@ -958,8 +1024,15 @@ td:first-of-type {
   color: #84817a;
 }
 
-.date__form:hover .date__input:nth-of-type(2) {
-  border-left: 1px solid #84817a;
+@media (max-width: 767px) {
+  .date__form {
+    width: 100%;
+    text-align: center;
+    border: none;
+  }
+  .date__form .date__input:nth-of-type(2) {
+    border-left: none;
+  }
 }
 
 .date__input {
@@ -975,6 +1048,12 @@ td:first-of-type {
   border-left: 1px solid #e6e0d4;
 }
 
+@media (max-width: 767px) {
+  .date__input {
+    border-left: none;
+  }
+}
+
 .date__icon {
   position: absolute;
   top: 12px;
@@ -983,11 +1062,25 @@ td:first-of-type {
   color: #ede7e3;
 }
 
+@media (max-width: 767px) {
+  .date__icon {
+    top: 87px;
+    left: 7px;
+  }
+}
+
 .results {
   margin: 0 auto;
   text-align: left;
   width: 60%;
   line-height: 35px;
+}
+
+@media (max-width: 767px) {
+  .results {
+    width: 80%;
+    padding-bottom: 10px;
+  }
 }
 
 .results__text {
@@ -1002,6 +1095,12 @@ span {
 .graph {
   width: 80%;
   margin: 30px auto;
+}
+
+@media (max-width: 767px) {
+  .graph {
+    display: none;
+  }
 }
 
 .graph__title {
