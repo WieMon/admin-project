@@ -17,8 +17,13 @@ function shortMenu(current = menu.classList) {
     menu.classList.add('collapsed');
     sectionContainer.classList.add('expanded');
   } else {
-    menu.classList.remove('collapsed');
-    sectionContainer.classList.remove('expanded');
+      if(window.screen.width < 767) {
+        menu.classList.remove('collapsed');
+
+      } else {
+        menu.classList.remove('collapsed');
+sectionContainer.classList.remove('expanded');
+      }
   }
 }
 
