@@ -726,6 +726,7 @@ tr:hover .table__icon:hover {
 @media (min-width: 767px) {
   tr {
     text-align: center;
+    border-bottom: 1px solid #e6e0d4;
   }
 }
 
@@ -1120,6 +1121,12 @@ span {
   }
 }
 
+@media (min-width: 767px) {
+  .graph {
+    margin-top: 0;
+  }
+}
+
 .graph__title {
   font-size: 18px;
   padding: 20px 0;
@@ -1127,6 +1134,12 @@ span {
 
 .graph__chart {
   padding: 20px 0 40px 0;
+}
+
+@media (min-width: 767px) {
+  .graph__chart {
+    margin: 0 auto;
+  }
 }
 
 /* Pages / Views */
