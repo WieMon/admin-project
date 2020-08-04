@@ -377,6 +377,10 @@ body {
   color: #84817a;
 }
 
+.hidden {
+  display: none;
+}
+
 .row {
   display: -ms-flexbox;
   display: flex;
@@ -933,6 +937,10 @@ td:nth-of-type(3), td:nth-of-type(4) {
   border-left: 5px solid #d81159;
   transition: 0.5s;
   cursor: pointer;
+}
+
+.menu__link {
+  color: #f7f1e3;
 }
 
 .menu__icon {

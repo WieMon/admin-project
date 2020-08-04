@@ -48,49 +48,49 @@
       </div>
       <ul class='menu__list'>
         <li class='menu__item'>
-          <a>
+          <a class='menu__link' href='#general'>
             <i class='menu__icon icon-general'>
               <span class='menu__item-name'>General</span>
             </i>
           </a>
         </li>
         <li class='menu__item'>
-          <a>
+          <a class='menu__link' href='#details'>
             <i class='menu__icon icon-details'>
               <span class='menu__item-name'>Details</span>
             </i>
           </a>
         </li>
         <li class='menu__item'>
-          <a>
+          <a class='menu__link' href='#links'>
             <i class='menu__icon icon-links'>
               <span class='menu__item-name'>Links</span>
             </i>
           </a>
         </li>
         <li class='menu__item'>
-          <a>
+          <a class='menu__link' href='#banners'>
             <i class='menu__icon icon-banners'>
               <span class='menu__item-name'>Banners</span>
             </i>
           </a>
         </li>
         <li class='menu__item'>
-          <a>
+          <a class='menu__link' href='#personal'>
             <i class='menu__icon icon-personaldata'>
               <span class='menu__item-name'>Personal data</span>
             </i>
           </a>
         </li>
         <li class='menu__item'>
-          <a>
+          <a class='menu__link' href='#payout'>
             <i class='menu__icon icon-payout'>
               <span class='menu__item-name'>Payout</span>
             </i>
           </a>
         </li>
         <li class='menu__item'>
-          <a>
+          <a class='menu__link' href='#postback'>
             <i class='menu__icon icon-postback'>
               <span class='menu__item-name'>Postback</span>
             </i>
@@ -105,211 +105,214 @@
       </div>
     </nav>
     <div class='section-container'>
-      <section class='section'>
-        <h4 class='title'>General statistics</h4>
-        <div class='date'>
-          <form class='date__form'>
-            <input class='date__input' type='date'>
-            <input class='date__input' type='date'>
-            <a href="#">
-              <i class="icon-calendar date__icon"></i>
-            </a>
-          </form>
-          <button class='button button--small'>
-            <i class='icon-refresh'></i>
-          </button>
-        </div>
-        <div class='results row'>
-          <div class='col-md-6'>
-            <p class='results__text'>Visit Signups<span>124</span></p>
-            <p class='results__text'>FTD<span>445</span></p>
+      <div class='toggle' id='general_section'>
+        <section class='section'>
+          <h4 class='title'>General statistics</h4>
+          <div class='date'>
+            <form class='date__form'>
+              <input class='date__input' type='date'>
+              <input class='date__input' type='date'>
+              <a href="#">
+                <i class="icon-calendar date__icon"></i>
+              </a>
+            </form>
+            <button class='button button--small'>
+              <i class='icon-refresh'></i>
+            </button>
           </div>
-          <div class='col-md-6'>
-            <p class='results__text'>Net deposit<span>564</span></p>
-            <p class='results__text'>Turn over<span>432</span></p>
+          <div class='results row'>
+            <div class='col-md-6'>
+              <p class='results__text'>Visit Signups<span>124</span></p>
+              <p class='results__text'>FTD<span>445</span></p>
+            </div>
+            <div class='col-md-6'>
+              <p class='results__text'>Net deposit<span>564</span></p>
+              <p class='results__text'>Turn over<span>432</span></p>
+            </div>
           </div>
-        </div>
-        <div class='graph'>
-          <h5 class='graph__title'>Earnings chart</h5>
-          <canvas class='graph__chart' id='myChart'></canvas>
-        </div>
-      </section>
-      <section class='section'>
-        <h4 class='title'>Links</h4>
-        <div class='button-container'>
-          <button class='button button--large'>+ add new</button>
-        </div>
-        <table class='table'>
-          <tbody>
-            <tr>
-              <td>Home page</td>
-              <td>
-                <a class='table__link'>http://www.homepage.com</a>
-              </td>
-              <td>
-                <a>
-                  <i class='table__icon icon-links'></i>
-                </a>
-              </td>
-              <td>
-                <a>
-                  <i class='table__icon icon-trash'></i>
-                </a>
-              </td>
-            </tr>
-            <tr>
-              <td>Currently offer</td>
-              <td>
-                <a class='table__link'>http://www.currently.com</a>
-              </td>
-              <td>
-                <a>
-                  <i class='table__icon icon-links'></i>
-                </a>
-              </td>
-              <td>
-                <a>
-                  <i class='table__icon icon-trash'></i>
-                </a>
-              </td>
-            </tr>
-            <tr>
-              <td>Blurpix</td>
-              <td>
-                <a class='table__link'>http://www.blurpix.com</a>
-              </td>
-              <td>
-                <a>
-                  <i class='table__icon icon-links'></i>
-                </a>
-              </td>
-              <td>
-                <a>
-                  <i class='table__icon icon-trash'></i>
-                </a>
-              </td>
-            </tr>
-            <tr>
-              <td>Your site</td>
-              <td>
-                <a class='table__link'>http://www.yoursite.com</a>
-              </td>
-              <td>
-                <a>
-                  <i class='table__icon icon-links'></i>
-                </a>
-              </td>
-              <td>
-                <a>
-                  <i class='table__icon icon-trash'></i>
-                </a>
-              </td>
-            </tr>
-            <tr>
-              <td>Google</td>
+          <div class='graph'>
+            <h5 class='graph__title'>Earnings chart</h5>
+            <canvas class='graph__chart' id='myChart'></canvas>
+          </div>
+        </section>
+        <section class='section'>
+          <h4 class='title'>Links</h4>
+          <div class='button-container'>
+            <button class='button button--large'>+ add new</button>
+          </div>
+          <table class='table'>
+            <tbody>
+              <tr>
+                <td>Home page</td>
                 <td>
-                  <a class='table__link'>http://www.google.com</a>
+                  <a class='table__link'>http://www.homepage.com</a>
                 </td>
-              <td>
-                <a>
-                  <i class='table__icon icon-links'></i>
-                </a>
-              </td>
-              <td>
-                <a>
-                  <i class='table__icon icon-trash'></i>
-                </a>
-              </td>
-            </tr>
-            <tr>
-              <td>Facebook</td>
-              <td>
-                <a class='table__link'>http://www.facebook.com</a>
-              </td>
-              <td>
-                <a>
-                  <i class='table__icon icon-links'></i>
-                </a>
-              </td>
-              <td>
-                <a>
-                  <i class='table__icon icon-trash'></i>
-                </a>
-              </td>
-            </tr>
-            <tr>
-              <td>Dashboard</td>
-              <td>
-                <a class='table__link'>http://www.dashboard.com</a>
-              </td>
-              <td>
-                <a>
-                  <i class='table__icon icon-links'></i>
-                </a>
-              </td>
-              <td>
-                <a>
-                  <i class='table__icon icon-trash'></i>
-                </a>
-              </td>
-            </tr>
-            <tr>
-              <td>Blurax</td>
-              <td>
-                <a class='table__link'>http://www.blurax.com</a>
-              </td>
-              <td>
-                <a>
-                  <i class='table__icon icon-links'></i>
-                </a>
-              </td>
-              <td>
-                <a>
-                  <i class='table__icon icon-trash'></i>
-                </a>
-              </td>
-            </tr>
-            <tr>
-              <td>Piece of Wine</td>
-              <td>
-                <a class='table__link'>http://www.pieceofwine.com</a>
-              </td>
-              <td>
-                <a>
-                  <i class='table__icon icon-links'></i>
-                </a>
-              </td>
-              <td>
-                <a>
-                  <i class='table__icon icon-trash'></i>
-                </a>
-              </td>
-            </tr>
-            <tr>
-              <td>Twitter</td>
-              <td>
-                <a class='table__link'>http://www.twitter.com</a>
-              </td>
-              <td>
-                <a>
-                  <i class='table__icon icon-links'></i>
-                </a>
-              </td>
-              <td>
-                <a>
-                  <i class='table__icon icon-trash'></i>
-                </a>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-        <div class='button-container'>
-          <button class='button button--large'>+ add new</button>
-        </div>
-      </section>
+                <td>
+                  <a>
+                    <i class='table__icon icon-links'></i>
+                  </a>
+                </td>
+                <td>
+                  <a>
+                    <i class='table__icon icon-trash'></i>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td>Currently offer</td>
+                <td>
+                  <a class='table__link'>http://www.currently.com</a>
+                </td>
+                <td>
+                  <a>
+                    <i class='table__icon icon-links'></i>
+                  </a>
+                </td>
+                <td>
+                  <a>
+                    <i class='table__icon icon-trash'></i>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td>Blurpix</td>
+                <td>
+                  <a class='table__link'>http://www.blurpix.com</a>
+                </td>
+                <td>
+                  <a>
+                    <i class='table__icon icon-links'></i>
+                  </a>
+                </td>
+                <td>
+                  <a>
+                    <i class='table__icon icon-trash'></i>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td>Your site</td>
+                <td>
+                  <a class='table__link'>http://www.yoursite.com</a>
+                </td>
+                <td>
+                  <a>
+                    <i class='table__icon icon-links'></i>
+                  </a>
+                </td>
+                <td>
+                  <a>
+                    <i class='table__icon icon-trash'></i>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td>Google</td>
+                  <td>
+                    <a class='table__link'>http://www.google.com</a>
+                  </td>
+                <td>
+                  <a>
+                    <i class='table__icon icon-links'></i>
+                  </a>
+                </td>
+                <td>
+                  <a>
+                    <i class='table__icon icon-trash'></i>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td>Facebook</td>
+                <td>
+                  <a class='table__link'>http://www.facebook.com</a>
+                </td>
+                <td>
+                  <a>
+                    <i class='table__icon icon-links'></i>
+                  </a>
+                </td>
+                <td>
+                  <a>
+                    <i class='table__icon icon-trash'></i>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td>Dashboard</td>
+                <td>
+                  <a class='table__link'>http://www.dashboard.com</a>
+                </td>
+                <td>
+                  <a>
+                    <i class='table__icon icon-links'></i>
+                  </a>
+                </td>
+                <td>
+                  <a>
+                    <i class='table__icon icon-trash'></i>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td>Blurax</td>
+                <td>
+                  <a class='table__link'>http://www.blurax.com</a>
+                </td>
+                <td>
+                  <a>
+                    <i class='table__icon icon-links'></i>
+                  </a>
+                </td>
+                <td>
+                  <a>
+                    <i class='table__icon icon-trash'></i>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td>Piece of Wine</td>
+                <td>
+                  <a class='table__link'>http://www.pieceofwine.com</a>
+                </td>
+                <td>
+                  <a>
+                    <i class='table__icon icon-links'></i>
+                  </a>
+                </td>
+                <td>
+                  <a>
+                    <i class='table__icon icon-trash'></i>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td>Twitter</td>
+                <td>
+                  <a class='table__link'>http://www.twitter.com</a>
+                </td>
+                <td>
+                  <a>
+                    <i class='table__icon icon-links'></i>
+                  </a>
+                </td>
+                <td>
+                  <a>
+                    <i class='table__icon icon-trash'></i>
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div class='button-container'>
+            <button class='button button--large'>+ add new</button>
+          </div>
+        </section>
+      </div>
+
 
       <!--Personal Data-->
-      <section class='section'>
+      <section class='section toggle' id='personal_section'>
         <h4 class='title'>Personal data</h4>
         <form class='personal'>
           <div class='personal__div'>

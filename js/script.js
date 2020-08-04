@@ -1,5 +1,6 @@
 'use strict';
 
+/*Menu*/
 const hamburger = document.querySelector('.menu__hamburger');
 const menu = document.querySelector('.menu');
 const sectionContainer = document.querySelector('.section-container');
@@ -77,3 +78,24 @@ var Chart = new Chart(ctx, {
     },
   }
 });
+
+/*Toggling pages*/
+const menuLinks = document.querySelectorAll('.menu__link');
+
+for (let i=0; i < menuLinks.length; i++) {
+  menuLinks[i].addEventListener('click', function(e) {
+    e.preventDefault();
+    const href = this.getAttribute('href');
+    const content = document.querySelector(href + '_section');
+    const all = document.querySelectorAll('.toggle');
+
+  if(content) {
+    for (let j=0; j < all.length; j++) {
+      all[j].classList.add('hidden');
+    }
+      content.classList.remove('hidden');
+    }
+  });
+}
+
+

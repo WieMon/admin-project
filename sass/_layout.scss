@@ -38,6 +38,10 @@ body {
   color: $color-five;
 }
 
+.hidden {
+  display: none;
+}
+
 .row {
   display: flex;
   flex-wrap: wrap;
