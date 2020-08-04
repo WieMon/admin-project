@@ -307,6 +307,44 @@
           <button class='button button--large'>+ add new</button>
         </div>
       </section>
+
+      <!--Personal Data-->
+      <section class='section'>
+        <h4 class='title'>Personal data</h4>
+        <form class='personal'>
+          <div class='personal__div'>
+            <label class='personal__label' for='name'>Name</label>
+            <input class='personal__input' type='text' name='name' id='name' required>
+            <label class='personal__label' for='surname'>Surname</label>
+            <input class='personal__input' type='text' name='surname' id='surname' required>
+            <label class='personal__label' for='email'>E-mail</label>
+            <input class='personal__input' type='email' name='email' id='email' required>
+            <label class='personal__label' for='phone'>Phone number</label>
+            <input class='personal__input' type='tel' name='phone' id='phone' required>
+          </div>
+          <div class='personal__div'>
+            <label class='personal__label' for='skype'>Skype</label>
+            <input class='personal__input' name='skype' id='skype'>
+            <label class='personal__label' for='icq'>ICQ</label>
+            <input class='personal__input' name='icq' id='icq'>
+            <label class='personal__label' for='msn'>Msn</label>
+            <input class='personal__input' name='msn' id='msn'>
+          </div>
+          <div class='personal__div'>
+            <label class='personal__label' for='wallet'>Wallet</label>
+            <input class='personal__input' name='wallet' id='wallet'>
+          </div>
+          <div class='personal__div'>
+            <label class='personal__label' for='password'>Password</label>
+            <input class='personal__input' name='password' id='password' minlength='10' required>
+            <label class='personal__label' for='repeat'>Repeat</label>
+            <input class='personal__input' name='repeat' id='repeat' minlength='10' required>
+          </div>
+          <div>
+            <button class='button button--large'>save</button>
+          </div>
+        </form>
+      </section>
     </div>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
