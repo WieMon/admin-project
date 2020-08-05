@@ -31,7 +31,7 @@
 /*menu__list*/
 .menu__list {
   margin-bottom: 20px;
-height: 274px;
+  height: 274px;
 }
 
 .menu__item {
@@ -48,6 +48,7 @@ height: 274px;
 .menu__link {
   color: $color-six;
 }
+
 .menu__icon {
   font-style: normal;
 }
@@ -107,8 +108,7 @@ height: 274px;
   }
   .menu__manager-div {
     padding-left: 9px;
-}
-
+  }
   .menu__manager-dot {
     top: 53px;
     left: 42px;

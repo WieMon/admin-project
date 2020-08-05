@@ -18,7 +18,7 @@ function shortMenu(current = menu.classList) {
     menu.classList.add('collapsed');
     sectionContainer.classList.add('expanded');
   } else {
-      if(window.screen.width < 767) {
+      if(window.screen.width <= 768) {
         menu.classList.remove('collapsed');
 
       } else {
