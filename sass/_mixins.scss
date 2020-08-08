@@ -8,3 +8,37 @@
     }
   }
 }
+
+/*Inputs*/
+@mixin input {
+  border: 1px solid $color-seven;
+  border-radius: 3%;
+  background: lighten($color-two, 7%);
+  outline: none;
+  color: darken($color-five, 25%);
+}
+
+@mixin hoverInput {
+  cursor: pointer;
+  background: lighten($color-two, 30%);
+  border: 1px solid darken($color-two, 30%);
+  transition: 0.4s;
+}
+
+@mixin rangeThumb {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 20px solid $color-four;
+  cursor: pointer;
+  margin-top: -5px;
+}
+
+@mixin rangeTrack {
+  width: 100%;
+    height: 9px;
+    cursor: pointer;
+    background: $color-two;
+    border: 0.2px solid darken($color-two, 10%);
+}

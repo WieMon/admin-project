@@ -1,0 +1,158 @@
+.postback {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+
+.postback__text {
+  padding: 20px;
+  text-align: left;
+}
+
+.textarea {
+  padding: 20px;
+  border-bottom: 1px solid $color-seven;
+}
+
+.textarea__field {
+  width: 100%;
+  padding: 10px;
+  @include input;
+  &:hover {
+    @include hoverInput;
+  }
+}
+
+.select {
+  padding: 20px;
+  border-bottom: 1px solid $color-seven;
+}
+
+.send {
+  display: flex;
+  padding: 20px;
+  margin: 20px 0;
+  border-bottom: 1px solid $color-seven;
+}
+
+.select__field {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+  padding: 5px;
+  @include input;
+  &:hover {
+    @include hoverInput;
+  }
+}
+
+.checkbox {
+  width: 100%;
+  padding: 20px;
+  border-right: 1px solid $color-seven;
+}
+
+.checkbox__div {
+  display: flex;
+  flex-direction: column;
+  height: 150px;
+
+  overflow-y: scroll;
+  &::-webkit-scrollbar {
+    width: 15px;
+  }
+  &::-webkit-scrollbar-track {
+    background: lighten($color-five, 40%);
+  }
+  &::-webkit-scrollbar-thumb {
+    background: lighten($color-five, 10%);
+  }
+}
+
+.checkbox__label {
+  position: relative;
+  padding: 8px 10px 8px 35px;
+  &:hover {
+    background: $color-two;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+}
+
+.checkbox__input {
+  width: 20px;
+  height: 20px;
+  opacity: 0;
+  border: 1px solid $color-seven;
+  &:checked ~ .checkbox__mark {
+    background: $color-four;
+  }
+  &:checked ~ .checkbox__mark:after {
+    display: block;
+  }
+}
+
+.checkbox__mark {
+  position: absolute;
+  top: 11px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  @include input;
+  &:after {
+    content: '';
+    position: absolute;
+    display: none;
+    left: 6px;
+    top: 3px;
+    width: 7px;
+    height: 10px;
+    border: solid $color-six;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+  }
+}
+
+.range__div {
+  display: flex;
+  flex-direction: column;
+}
+
+.range__numbers {
+  padding: 20px 0;
+}
+
+.range__input {
+  -webkit-appearance: none;
+  width: 100%;
+  background-color: $color-four;
+  &:focus {
+    outline: none;
+  }
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    @include rangeThumb;
+  }
+  &::-moz-range-thumb {
+    @include rangeThumb;
+  }
+  &::-ms-thumb {
+    @include rangeThumb;
+  }
+  &::-webkit-slider-runnable-track {
+    -webkit-appearance: none;
+    @include rangeTrack;
+
+  }
+  &::-moz-range-track {
+    @include rangeTrack;
+
+  }
+  &::-ms-track {
+    @include rangeTrack;
+  }
+  &::-ms-fill-lower {
+    background: $color-four;
+  }
+}

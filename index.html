@@ -356,17 +356,17 @@
           <p class='postback__text'>You can insert some parameters in this postback:</p>
           <div class='textarea'>
             <div class='textarea__div col-md-6'>
-              <p class='textarea__text'>Signup:</p>
+              <h4 class='title-postback'>Signup:</h4>
               <textarea class='textarea__field' rows='10'></textarea>
             </div>
             <div class='textarea__div col-md-6'>
-              <p class='textarea__text'>Deposit:</p>
+              <h4 class='title-postback'>Deposit:</h4>
               <textarea class='textarea__field' rows='10'></textarea>
             </div>
           </div>
           <div class='select'>
             <div class='select__div col-md-4'>
-              <p class='select__text'>Postback type:</p>
+              <h4 class='title-postback'>Postback type:</h4>
               <select class='select__field'>
                 <option class='select__input' value="S1S">S1S (http://..)</option>
 		            <option class='select__input' value="S2S">S2S (http://..)</option>
@@ -376,7 +376,7 @@
               </select>
             </div>
             <div class='select__div col-md-4'>
-              <p class='select__text'>To countries:</p>
+              <h4 class='title-postback'>To countries:</h4>
               <select class='select__field'>
                 <option class='select__input' value="Country 1">Country 1</option>
 		            <option class='select__input' value="Country 2">Country 2</option>
@@ -386,7 +386,7 @@
               </select>
             </div>
             <div class='select__div col-md-4'>
-              <p class='select__text'>Sending options:</p>
+              <h4 class='title-postback'>Sending options:</h4>
               <select class='select__field'>
                 <option class='select__input' value="Option 1">Option 1</option>
 		            <option class='select__input' value="Option 2">Option 2</option>
@@ -395,14 +395,14 @@
 		            <option class='select__input' value="Option 5">Option 5</option>
               </select>
             </div>
-          <div>
-          <div>
+          </div>
+          <div class='send'>
             <div class='checkbox cold-md-6'>
-              <p class='checkbox__text'><span>Not</span>send statuses:</p>
-              <div>
+              <h4 class='title-postback'>NOT send statuses: </h4>
+              <div class='checkbox__div'>
                 <label class='checkbox__label'>checkNumber
-                  <input type='checkbox'>
-                  <span class=''></span>
+                  <input class='checkbox__input' type='checkbox'>
+                  <span class='checkbox__mark'></span>
                 </label>
                 <label class='checkbox__label'>noAnswer
                   <input class='checkbox__input' type='checkbox'>
@@ -422,23 +422,25 @@
                 </label>
                 <label class='checkbox__label'>callNumber
                   <input class='checkbox__input' type='checkbox'>
-                <span class='checkbox__mark'></span>
-                  </label>
+                  <span class='checkbox__mark'></span>
+                </label>
               </div>
             </div>
-            <div class='range cold-md-6'>
-              <p class='range__text'>Send after:</p>
+
+            <div class='range col-md-6'>
+              <h4 class='title-postback'>Send after:</h4>
               <p class='range__numbers'>0<span>168</span></p>
-              <div>
+              <div class='range__div'>
                 <input class='range__input' type='range' id='volume' name='volume' min='0' max='168'>
-                <label class='range__label' for='hours'>104 hours</label>
+              
               </div>
             </div>
           </div>
+
           <div class='button-container'>
             <button class='button button--large'>Create Pixel</button>
           </div>
-          </div>
+
         </form>
       </section>
     </div>
