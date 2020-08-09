@@ -1224,6 +1224,12 @@ span {
   padding-bottom: 20px;
 }
 
+@media (max-width: 767px) {
+  .postback {
+    text-align: center;
+  }
+}
+
 .postback__text {
   padding: 20px;
   text-align: left;
@@ -1264,6 +1270,15 @@ span {
   border-bottom: 1px solid #e6e0d4;
 }
 
+@media (max-width: 767px) {
+  .send {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+}
+
 .select__field {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -1288,6 +1303,15 @@ span {
   width: 100%;
   padding: 20px;
   border-right: 1px solid #e6e0d4;
+}
+
+@media (max-width: 767px) {
+  .checkbox {
+    text-align: left;
+    border-right: none;
+    border-bottom: 1px solid #e6e0d4;
+    margin-bottom: 20px;
+  }
 }
 
 .checkbox__div {
@@ -1320,6 +1344,12 @@ span {
   background: #ede7e3;
   transition: 0.5s;
   cursor: pointer;
+}
+
+@media (max-width: 767px) {
+  .checkbox__label {
+    padding-left: 26px;
+  }
 }
 
 .checkbox__input {
