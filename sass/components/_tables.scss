@@ -1,8 +1,12 @@
+/*General*/
 .table {
-  width: 70%;
-  margin: 0 auto;
+  margin: 20px auto;
   border-collapse: collapse;
   line-height: 60px;
+}
+
+.table--general {
+  width: 70%;
 }
 
 tr {
@@ -41,9 +45,105 @@ td {
   }
 }
 
+.table__link {
+  text-decoration: none;
+  padding: 8px;
+}
+
+.active {
+  background-color: $color-two;
+}
+
 .table__icon {
   height: 15px;
   width: 15px;
   opacity: 0;
   padding: 0 0 0 15px;
 }
+
+/*Details*/
+.table--details {
+  width: 90%;
+  font-size: 14px;
+  thead {
+    tr {
+    border: none;
+    font-weight: 700;
+    color: darken($color-five, 30%);
+    background-color: $color-two;
+    }
+  }
+  tr {
+    text-align: center;
+  }
+  @media (max-width: 992px) {
+    table, thead, tbody, th, td, tr {
+      display: block;
+
+    }
+    thead tr {
+      position: absolute;
+      top: -9999px;
+      left: -9999px;
+    }
+    tr {
+      border-bottom: 3px solid darken($color-seven, 10%);
+    }
+    td {
+      border: none;
+      border-bottom: 1px solid $color-seven;
+      position: relative;
+      padding-left: 50%;
+    }
+    td:before {
+      position: absolute;
+      top: 6px;
+      left: 6px;
+      width: 45%;
+      padding-right: 10px;
+      white-space: nowrap;
+      color: darken($color-five, 30%);
+      font-weight: 700;
+    }
+    td:nth-of-type(1):before { content: 'Id'; }
+    td:nth-of-type(2):before { content: 'Initiated data'; }
+    td:nth-of-type(3):before { content: 'Visits'; }
+    td:nth-of-type(4):before { content: 'Unique'; }
+    td:nth-of-type(5):before { content: 'Signups'; }
+    td:nth-of-type(6):before { content: 'FTD'; }
+    td:nth-of-type(7):before { content: 'Depositors'; }
+    td:nth-of-type(8):before { content: 'Deposits ($)'; }
+    td:nth-of-type(9):before { content: 'Payout ($)'; }
+    td:nth-of-type(10):before { content: 'Turnover'; }
+    td:nth-of-type(11):before { content: 'Deal'; }
+  }
+  // @media(min-width: 768px) and (max-width: 992px) {
+
+  //   width: 95%;
+  //   margin: 0 auto;
+  //   color: red;
+  // }
+}
+
+.table__link-slider {
+  padding: 30px 0 40px 0;
+  text-align: center;
+  font-size: 20px;
+}
+
+.table__link--details {
+  color: lighten($color-one, 10%);
+  &:hover:not(.active) {
+    color: $color-four;
+  }
+  &:not(:first-child):not(:last-child)  {
+    @media(max-width: 767px) {
+   display: none;
+   }
+ }
+
+
+
+}
+
+

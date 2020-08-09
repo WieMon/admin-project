@@ -656,6 +656,7 @@ body {
 /* Components */
 .button-container {
   text-align: center;
+  padding: 20px 0;
 }
 
 .button {
@@ -692,11 +693,15 @@ body {
   padding: 10px 20px;
 }
 
+/*General*/
 .table {
-  width: 70%;
-  margin: 0 auto;
+  margin: 20px auto;
   border-collapse: collapse;
   line-height: 60px;
+}
+
+.table--general {
+  width: 70%;
 }
 
 tr {
@@ -746,11 +751,120 @@ td:first-of-type {
   }
 }
 
+.table__link {
+  text-decoration: none;
+  padding: 8px;
+}
+
+.active {
+  background-color: #ede7e3;
+}
+
 .table__icon {
   height: 15px;
   width: 15px;
   opacity: 0;
   padding: 0 0 0 15px;
+}
+
+/*Details*/
+.table--details {
+  width: 90%;
+  font-size: 14px;
+}
+
+.table--details thead tr {
+  border: none;
+  font-weight: 700;
+  color: #343331;
+  background-color: #ede7e3;
+}
+
+.table--details tr {
+  text-align: center;
+}
+
+@media (max-width: 992px) {
+  .table--details table, .table--details thead, .table--details tbody, .table--details th, .table--details td, .table--details tr {
+    display: block;
+  }
+  .table--details thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  .table--details tr {
+    border-bottom: 3px solid #d3c9b4;
+  }
+  .table--details td {
+    border: none;
+    border-bottom: 1px solid #e6e0d4;
+    position: relative;
+    padding-left: 50%;
+  }
+  .table--details td:before {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+    color: #343331;
+    font-weight: 700;
+  }
+  .table--details td:nth-of-type(1):before {
+    content: 'Id';
+  }
+  .table--details td:nth-of-type(2):before {
+    content: 'Initiated data';
+  }
+  .table--details td:nth-of-type(3):before {
+    content: 'Visits';
+  }
+  .table--details td:nth-of-type(4):before {
+    content: 'Unique';
+  }
+  .table--details td:nth-of-type(5):before {
+    content: 'Signups';
+  }
+  .table--details td:nth-of-type(6):before {
+    content: 'FTD';
+  }
+  .table--details td:nth-of-type(7):before {
+    content: 'Depositors';
+  }
+  .table--details td:nth-of-type(8):before {
+    content: 'Deposits ($)';
+  }
+  .table--details td:nth-of-type(9):before {
+    content: 'Payout ($)';
+  }
+  .table--details td:nth-of-type(10):before {
+    content: 'Turnover';
+  }
+  .table--details td:nth-of-type(11):before {
+    content: 'Deal';
+  }
+}
+
+.table__link-slider {
+  padding: 30px 0 40px 0;
+  text-align: center;
+  font-size: 20px;
+}
+
+.table__link--details {
+  color: #005fa9;
+}
+
+.table__link--details:hover:not(.active) {
+  color: #d81159;
+}
+
+@media (max-width: 767px) {
+  .table__link--details:not(:first-child):not(:last-child) {
+    display: none;
+  }
 }
 
 .title {
@@ -792,6 +906,7 @@ td:first-of-type {
   right: 0;
   background-color: #fafaf3;
   border-bottom: 1px solid #ceccc9;
+  z-index: 1;
 }
 
 .header__list {
@@ -1221,7 +1336,6 @@ span {
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
-  padding-bottom: 20px;
 }
 
 @media (max-width: 767px) {
@@ -1266,7 +1380,7 @@ span {
   display: -ms-flexbox;
   display: flex;
   padding: 20px;
-  margin: 20px 0;
+  margin: 20px 0 0 0;
   border-bottom: 1px solid #e6e0d4;
 }
 
