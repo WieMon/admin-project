@@ -1001,6 +1001,7 @@ td:first-of-type {
   left: 0;
   color: #f7f1e3;
   transition: all .5s;
+  z-index: 2;
 }
 
 /*menu__hamburger-div*/
