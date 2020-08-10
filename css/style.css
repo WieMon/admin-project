@@ -663,7 +663,7 @@ body {
   text-decoration: none;
   background: #d81159;
   color: #ede7e3;
-  margin: 20px;
+  margin: 10px;
   border: none;
   border-radius: 5px;
 }
@@ -863,6 +863,28 @@ td:first-of-type {
 
 @media (max-width: 767px) {
   .table__link--details:not(:first-child):not(:last-child) {
+    display: none;
+  }
+}
+
+/*Banners*/
+.table--banners {
+  width: 70%;
+}
+
+@media (max-width: 992px) {
+  .table--banners {
+    width: 85%;
+  }
+}
+
+.table__link--banners {
+  font-weight: 400;
+  float: none;
+}
+
+@media (max-width: 767px) {
+  .table__link--banners {
     display: none;
   }
 }
