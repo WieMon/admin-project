@@ -1,10 +1,11 @@
 'use strict';
-
-/*Menu*/
 const hamburger = document.querySelector('.menu__hamburger');
 const menu = document.querySelector('.menu');
 const sectionContainer = document.querySelector('.section-container');
+const modalOpen = document.querySelector('.modal-manager__open');
+const modalClose = document.querySelector('.modal-manager__close');
 
+/*Menu*/
 if (window.screen.width < 767) {
   menu.classList.add('collapsed');
   sectionContainer.classList.add('expanded');
@@ -98,4 +99,22 @@ for (let i=0; i < menuLinks.length; i++) {
   });
 }
 
+/*Modal - manager*/
+function openModal() {
+  document.querySelector('.overlay').classList.add('show');
+  document.querySelector('.modal-manager').classList.add('show');
+}
 
+function closeModal() {
+  document.querySelector('.overlay').classList.remove('show');
+}
+
+modalOpen.addEventListener('click', function(e) {
+  e.preventDefault();
+  openModal();
+})
+
+modalClose.addEventListener('click', function(e) {
+  e.preventDefault();
+  closeModal();
+})
