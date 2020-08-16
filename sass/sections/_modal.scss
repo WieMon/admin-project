@@ -15,7 +15,7 @@
   position: relative;
   margin: auto;
   width: 600px;
-  border-radius: 5%;
+  border-radius: $border-radius;
   background-color: $color-three;
 }
 
@@ -42,19 +42,31 @@
 }
 
 .modal-manager__img {
-  height: 100px;
-  width: 75px;
+  height: 100%;
+  width: 70px;
   border-radius: 45px;
   margin-right: 15px;
   vertical-align: middle;
 }
 
+.modal-manager__info {
+  display: inline-block;
+}
+
 .modal-manager__status {
   width: 60px;
+  padding: 5px;
+  margin: 10px 0 0 0;
   text-align: center;
   border-radius: 5px;
   color: $color-three;
   background-color: $color-eight;
+}
+
+.modal-manager__name {
+  font-size: 26px;
+  font-weight: 700;
+
 }
 
 .modal-manager__chat-item {
@@ -63,5 +75,25 @@
   width: 60%;
   overflow-y: auto;
   border: 1px solid $color-seven;
-  border-radius: 5px;
+  border-radius: $border-radius;
+}
+
+.modal-manager__chat-item--a {
+  background-color: lighten($color-five, 45%);
+
+}
+
+.modal-manager__chat-item--q {
+  background-color: lighten($color-five, 10%);
+  float: right;
+  margin-top: 0;
+  color: $color-three;
+}
+.modal-manager__input {
+  width: 250px;
+  padding: 10px;
+  @include input;
+  &:hover {
+    @include hoverInput;
+  }
 }

@@ -12,7 +12,7 @@
 /*Inputs*/
 @mixin input {
   border: 1px solid $color-seven;
-  border-radius: 3%;
+  border-radius: $border-radius;
   background: lighten($color-two, 7%);
   outline: none;
   color: darken($color-five, 25%);
@@ -25,6 +25,7 @@
   transition: 0.4s;
 }
 
+/*Scroll*/
 @mixin rangeThumb {
   width: 0;
   height: 0;

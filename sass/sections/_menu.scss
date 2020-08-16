@@ -76,7 +76,7 @@
 .menu__manager-img {
   height: 50px;
   width: 40px;
-  border-radius: 45px;
+  border-radius: $img-radius;
   margin-right: 15px;
   vertical-align: middle;
   position: absolute;
@@ -89,7 +89,7 @@
   left: 52px;
   width:10px;
   height: 10px;
-  border-radius: 50%;
+  border-radius: $dot-radius;
   background-color: $color-four;
 }
 

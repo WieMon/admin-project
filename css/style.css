@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Damion|Open+Sans&display=swap&subset=latin-ext");
 /* Colors */
 /* Fonts */
+/*Radius*/
 /*Inputs*/
+/*Scroll*/
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -900,6 +902,7 @@ td:first-of-type {
   text-transform: uppercase;
   padding: 20px;
   border-bottom: 1px solid #e6e0d4;
+  color: #84817a;
 }
 
 @media (max-width: 767px) {
@@ -1095,7 +1098,7 @@ td:first-of-type {
 .menu__manager-img {
   height: 50px;
   width: 40px;
-  border-radius: 45px;
+  border-radius: 45%;
   margin-right: 15px;
   vertical-align: middle;
   position: absolute;
@@ -1341,7 +1344,7 @@ span {
   height: 40px;
   margin: 10px 0;
   border: 1px solid #e6e0d4;
-  border-radius: 3%;
+  border-radius: 5px;
   background: #fbfaf9;
   outline: none;
   color: #42403d;
@@ -1381,7 +1384,7 @@ span {
   width: 100%;
   padding: 10px;
   border: 1px solid #e6e0d4;
-  border-radius: 3%;
+  border-radius: 5px;
   background: #fbfaf9;
   outline: none;
   color: #42403d;
@@ -1423,7 +1426,7 @@ span {
   width: 100%;
   padding: 5px;
   border: 1px solid #e6e0d4;
-  border-radius: 3%;
+  border-radius: 5px;
   background: #fbfaf9;
   outline: none;
   color: #42403d;
@@ -1511,7 +1514,7 @@ span {
   width: 20px;
   height: 20px;
   border: 1px solid #e6e0d4;
-  border-radius: 3%;
+  border-radius: 5px;
   background: #fbfaf9;
   outline: none;
   color: #42403d;
@@ -1628,7 +1631,7 @@ span {
   position: relative;
   margin: auto;
   width: 600px;
-  border-radius: 5%;
+  border-radius: 5px;
   background-color: #fafaf3;
 }
 
@@ -1657,19 +1660,30 @@ span {
 }
 
 .modal-manager__img {
-  height: 100px;
-  width: 75px;
+  height: 100%;
+  width: 70px;
   border-radius: 45px;
   margin-right: 15px;
   vertical-align: middle;
 }
 
+.modal-manager__info {
+  display: inline-block;
+}
+
 .modal-manager__status {
   width: 60px;
+  padding: 5px;
+  margin: 10px 0 0 0;
   text-align: center;
   border-radius: 5px;
   color: #fafaf3;
   background-color: #20bf6b;
+}
+
+.modal-manager__name {
+  font-size: 26px;
+  font-weight: 700;
 }
 
 .modal-manager__chat-item {
@@ -1679,6 +1693,34 @@ span {
   overflow-y: auto;
   border: 1px solid #e6e0d4;
   border-radius: 5px;
+}
+
+.modal-manager__chat-item--a {
+  background-color: #f2f2f1;
+}
+
+.modal-manager__chat-item--q {
+  background-color: #9d9a94;
+  float: right;
+  margin-top: 0;
+  color: #fafaf3;
+}
+
+.modal-manager__input {
+  width: 250px;
+  padding: 10px;
+  border: 1px solid #e6e0d4;
+  border-radius: 5px;
+  background: #fbfaf9;
+  outline: none;
+  color: #42403d;
+}
+
+.modal-manager__input:hover {
+  cursor: pointer;
+  background: white;
+  border: 1px solid #b19786;
+  transition: 0.4s;
 }
 
 /* Pages / Views */

@@ -9,7 +9,7 @@
   color: $color-two;
   margin: 10px;
   border: none;
-  border-radius: 5px;
+  border-radius: $border-radius;
   &:hover {
     cursor: pointer;
     background: lighten($color-four, 10%);
