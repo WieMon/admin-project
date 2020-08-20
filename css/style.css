@@ -1655,7 +1655,7 @@ span {
   text-align: center;
 }
 
-.modal-manager__close {
+.modal__close {
   float: right;
 }
 

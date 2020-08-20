@@ -2,8 +2,10 @@
 const hamburger = document.querySelector('.menu__hamburger');
 const menu = document.querySelector('.menu');
 const sectionContainer = document.querySelector('.section-container');
-const modalOpen = document.querySelector('.modal-manager__open');
-const modalClose = document.querySelector('.modal-manager__close');
+const overlay = document.querySelector('.overlay');
+const modalOpen = document.querySelector('.modal__open');
+const modalClose = document.querySelector('.modal__close');
+
 
 /*Menu*/
 if (window.screen.width < 767) {
@@ -99,7 +101,7 @@ for (let i=0; i < menuLinks.length; i++) {
   });
 }
 
-/*Modal - manager*/
+/*Modals*/
 function openModal() {
   document.querySelector('.overlay').classList.add('show');
   document.querySelector('.modal-manager').classList.add('show');
