@@ -1,6 +1,7 @@
 .graph {
   width: 80%;
-  margin: 30px auto;
+  padding: 0 25px;
+  margin: 0 auto;
   @media(max-width: 767px) {
     display: none;
   }

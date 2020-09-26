@@ -25,7 +25,7 @@
   cursor: pointer;
   border-left: 1px solid $color-seven;
   padding: 20px;
-  color: $color-five;
+  color: darken($color-five, 20%);
   &:hover {
     background-color: $color-two;
     border-bottom: 1px solid lighten($color-five, 35%);
@@ -54,7 +54,7 @@
 }
 
 .header__name {
-  color: $color-five;
+  color: darken($color-five, 20%);;
   @media(max-width: 767px) {
     display: none;
   }
