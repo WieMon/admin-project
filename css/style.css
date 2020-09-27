@@ -735,12 +735,20 @@ tr:hover .table__icon:hover {
   }
 }
 
-td {
-  border-bottom: 1px solid #e6e0d4;
+@media (min-width: 768px) {
+  td {
+    padding: 0;
+    font-size: 14px;
+  }
 }
 
-td:first-of-type {
-  padding: 0 12px;
+@media (min-width: 992px) {
+  td {
+    border-bottom: 1px solid #e6e0d4;
+  }
+  td:first-of-type {
+    padding: 0 12px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1222,7 +1230,7 @@ td:first-of-type {
 
 @media (max-width: 767px) {
   .date__icon {
-    top: 87px;
+    top: 47px;
     left: 7px;
   }
 }
