@@ -44,13 +44,13 @@ var Chart = new Chart(ctx, {
     labels: ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10'],
     datasets: [{
       label: 'Signups',
-      backgroundColor: '#1AB298',
+      backgroundColor: '#20bf6b',
       borderColor: '#1AB298',
       data: [280, 150, 200, 280, 350, 330, 320, 180, 250, 270]
     },
     {
       label: 'FTD',
-      backgroundColor: '#a64970',
+      backgroundColor: '#d81159',
       borderColor: '#a64970',
       data: [300, 140, 240, 220, 370, 100, 150, 200, 400, 280],
     },
@@ -63,7 +63,6 @@ var Chart = new Chart(ctx, {
     }]
   },
   options: {
-
     scales: {
       yAxes: [{
         ticks: {
@@ -71,6 +70,7 @@ var Chart = new Chart(ctx, {
           stepSize: 100,
           min: 0,
           max: 600,
+
         },
       }],
       xAxes: [{

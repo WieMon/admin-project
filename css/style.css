@@ -377,7 +377,7 @@ body {
   background-color: #fff;
   margin-bottom: 20px;
   box-shadow: 0 0 10px #84817a;
-  color: #4f4d49;
+  color: black;
 }
 
 .hidden {
@@ -786,7 +786,7 @@ tr:hover .table__icon:hover {
 .table--data thead tr {
   border: none;
   font-weight: 700;
-  color: #343331;
+  color: black;
   background-color: #ede7e3;
 }
 
@@ -819,7 +819,7 @@ tr:hover .table__icon:hover {
     width: 45%;
     padding-right: 10px;
     white-space: nowrap;
-    color: #343331;
+    color: black;
     font-weight: 700;
   }
   .table--data td:nth-of-type(1):before {
@@ -910,7 +910,7 @@ tr:hover .table__icon:hover {
   text-transform: uppercase;
   padding: 20px;
   border-bottom: 1px solid #e6e0d4;
-  color: #4f4d49;
+  color: black;
 }
 
 @media (max-width: 767px) {
@@ -1032,7 +1032,7 @@ tr:hover .table__icon:hover {
   position: fixed;
   top: 0;
   left: 0;
-  color: #f7f1e3;
+  color: #fff;
   transition: all .5s;
   z-index: 2;
 }
@@ -1077,7 +1077,7 @@ tr:hover .table__icon:hover {
 }
 
 .menu__link {
-  color: #f7f1e3;
+  color: #fff;
 }
 
 .menu__icon {
@@ -1687,7 +1687,7 @@ span {
   text-align: center;
   border-radius: 5px;
   color: #fff;
-  background-color: #20bf6b;
+  background-color: #17d36f;
 }
 
 .modal-manager__name {
