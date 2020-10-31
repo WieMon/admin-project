@@ -6,8 +6,8 @@ My individual project based on the PSD templates provided during the Web Develop
 [DEMO](https://wiemon.github.io/admin-project/)
 
 ## Technologies:
-- HTML
-- SCSS: BEM
+- HTML5
+- Sass/SCSS: BEM
 - JavaScript
 - Node.js: 10.17.0
 - npm: 6.13.1
