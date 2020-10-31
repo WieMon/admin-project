@@ -1,7 +1,9 @@
 # admin-project
+
+## Description:
 My individual project based on the PSD templates provided during the Web Developer Bootcamp.
 
-## [DEMO](https://wiemon.github.io/admin-project/)
+[DEMO](https://wiemon.github.io/admin-project/)
 
 ## Technologies:
 - HTML
