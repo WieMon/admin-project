@@ -11,6 +11,7 @@ My individual project based on the PSD templates provided during the Web Develop
 - JavaScript
 - Node.js: 10.17.0
 - npm: 6.13.1
+- Git: 2.24.0
 - EditorConfig: 0.15.1
 - autoprefixer-cli: 1.0.0
 - browser-sync: 2.26.10
@@ -23,10 +24,10 @@ My individual project based on the PSD templates provided during the Web Develop
 - onchange: 6.1.1
 - stylelint: 11.1.1
 - stylelint-scss: 3.18.0
-- font awesome: 5.9.0
-- glyphter: Aug 01 2017
-- fonts google: open sans & damion
-- chart.js: 2.8.0
+- Font Awesome: 5.9.0
+- Glyphter: Aug 01 2017
+- google fonts: open sans & damion
+- Chart.js: 2.8.0
 
 ## To run this project use the command:
 `npm run watch`
