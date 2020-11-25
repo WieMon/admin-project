@@ -29,6 +29,6 @@ My individual project based on the PSD templates provided during the Web Develop
 - google fonts: open sans & damion
 - Chart.js: 2.8.0
 
-## To run this project use the command:
+## To run this project in the development mode:
 `npm run watch`
 
